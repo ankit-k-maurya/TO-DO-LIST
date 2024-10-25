@@ -4,7 +4,7 @@ version: '3.9'
 services:
 
   db:
-    image: postgres
+    image: postgres:16
     ports:
       - "5432:5432"
     restart: always
@@ -18,7 +18,8 @@ services:
     #      size: 134217728 # 128*2^20 bytes = 128Mb
     environment:
       POSTGRES_PASSWORD: ankitkumar
-
+      POSTGRES_DB: E-shop
+      
   adminer:
     image: adminer
     restart: always
