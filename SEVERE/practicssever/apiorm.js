@@ -9,7 +9,7 @@ const app = express ();
 const port = 8000;
 app.use(bodyParser.json());
 const CorsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'http://44.201.210.147:3000',
     credentials: true,
     optionSuccessStatus:200,
     methods:['GET', 'PATCH', 'POST', 'DELETE']
